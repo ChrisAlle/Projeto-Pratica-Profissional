@@ -1,36 +1,73 @@
 <html>
+
 <head>
-    <link href="principal.css" rel="stylesheet" type="text/css">
-    
-    <header>
-        
-    </header>
-    
-    <script type="text/javascript">
-    
-    </script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
-    
-    <body>
-    <div id="logo"></div>
-    <input type="button" name="btnEntrar" value="Entrar ou Cadastrar-se" class="button">
-        
-        <nav id="menu">
-        <ul>
-            <li>
-                <a>Sobre nós</a>
-            </li>
-            <li>
-                <a>Contato</a>
+
+<body class="grey darken-2">
+    <nav class="red darken-1">
+        <div class="nav-wrapper">
+            <a class="brand-logo center"><img class="circle z-depth-2" src="imagens/logo.png"></a>
+            <ul id="nav-mobile" class="hide-on-med-and-down">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="http://cotuca.unicamp.br/cotuca/" target="_blank">Cotuca</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="entar.html" class="btn white black-text waves-effect waves-red">Entrar ou Cadastrar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <br><br><br>
+
+        <div class="row">
+            <div class="col s12 center">
+                <img class="responsive-img center" src="imagens/Fome%20de%20que.png">
+            </div>
+        </div>
+
+        <br><br><br><br>
+
+        <div class="row">
+            <img class="responsive-img" src="imagens/dialogoComUsuario.png">
+        </div>
+
+        <div class="row">
+            <div class="col s6">
+                <a href="preferenciaPedido.html" class="btn-large red darken-1 waves-effect waves-light right">QUERO PEDIR!</a>
+            </div>
+            <div class="col s4 offset-9">
+                <a href="preferenciaReceita.html" class="btn-large red darken-1 waves-effect waves-light left">QUERO COZINHAR!</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer red darken-1">
+        <div class="conatiner">
+            <div class="row">
+                <div class="col l6 s12">
+                    <img class="circle center" src="imagens/logo.png">
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
                     <ul>
-                        <li>
-                            <a>Fale conosco</a>
-                            <a href="http://cotuca.unicamp.br">COTUCA</a>
-                        </li>
+                        <li><a class="grey-text text-lighten-3" href="sobre.html">Sobre</a></li>
+                        <li><a class="grey-text text-lighten-3" href="http://cotuca.unicamp.br/cotuca/" target="_blank">Cotuca</a></li>
+                        <li><a class="grey-text text-lighten-3" href="contato.html">Contato</a></li>
                     </ul>
-            </li>
-        </ul>
-        </nav>
-    </body>
-    
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright red darken-2">
+        </div>
+    </footer>
+</body>
+
 </html>

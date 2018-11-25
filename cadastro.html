@@ -1,0 +1,78 @@
+<html>
+    
+    <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+    <script>
+        function validaSenha(){
+            var senha1 = document.getElementById("senha1");
+            var senha2 = document.getElementById("senha2");
+            
+            if(senha1 != senha2){
+                alert("Senha inconpatível");
+            }
+        }
+        
+    </script>
+<body>
+    <nav class="red darken-1">
+        <div class="nav-wrapper">
+            <a class="brand-logo center"><img class="circle z-depth-2" src="imagens/logo.png"></a>
+            <ul id="nav-mobile" class="hide-on-med-and-down">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="http://cotuca.unicamp.br/cotuca/" target="_blank">Cotuca</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a class="btn white black-text waves-effect waves-red">Entrar ou Cadastrar</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br><br><br>
+    <div class="container">
+        <div class="row">
+                <div class="col s12 center">
+                    <img class="responsive-img" src="imagens/cadastro.png">
+                </div>
+            </div>
+        <br><br><br>
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="nomeUsuario" type="text">
+          <label for="nomeUsuario">Nome de Usuário</label>
+          </div>
+          </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="senha1" type="password" class="validate">
+          <label for="senha1">Senha</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="senha2" type="password" class="validate">
+          <label for="senha2">Confirme a senha</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+        </form>
+        <br><br>
+  <div class="row">
+                <div class="col s12 center">
+                    <input type="submit" onclick="validaSenha()" class="btn-large red darken-1">
+                </div>
+            </div>
+
+</body>
+</html>

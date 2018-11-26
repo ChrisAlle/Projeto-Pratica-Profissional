@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lista Dados</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+<h2> Clientes </h2>
+
+<script>
+function EnviaID() {
+
+    var xmlhttp = new XMLHttpRequest();
+    var url = "http://localhost:3000/clientes";
+
+    xmlhttp.onreadystatechange=function() {
+        if (this.readyState == 4 && this.status == 200) {
+            //quando os dados retornarem da requisição serão enviados para a função ExibeDados()
+            ExibeDados(this.responseText);
+        }
+    }
+
+    if (document.getElementById("idCliente").length == 0 ) {
+        xmlhttp.open("GET", url, true);
+    } else {
+        var idCliente = document.getElementById("idCliente").value;
+        xmlhttp.open("GET", url+"/"+idCliente, true);
+    }
+    
+    xmlhttp.send();
+} //function EnviaID() 
+
+function ExibeDados(response) {
+    var arr = JSON.parse(response);
+    var out = "<table>";
+
+    for(var i = 0; i < arr.length; i++) {
+        out += "<tr><td>" + 
+        arr[i].ID +
+        "</td><td>" +
+        arr[i].Nome +
+        "</td><td>" +
+        arr[i].CPF +
+        "</td></tr>";
+    }
+    out += "</table>";
+    document.getElementById("id01").innerHTML = out;
+} //function ExibeDados()
+
+</script>
+<form> 
+    ID Cliente: <input type="text" id="idCliente">
+    <input type="button" id="btnEnviar" value="Buscar dados" onclick="EnviaID()">
+</form>
+<br>
+<div id="id01"></div>
+</body>
+</html>

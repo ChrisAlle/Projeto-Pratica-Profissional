@@ -3,5 +3,5 @@ Projeto de Pratica Profissional I
 
 Projeto "Fome de Que"
 Por
-Christovam Lopes e
+Christovam Alves e
 Gustavo Moda
